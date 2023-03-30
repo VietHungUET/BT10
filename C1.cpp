@@ -13,7 +13,7 @@ struct String
         }                      // Hoặc có thể gắn int length=strlen(s)
         n=length;
         str=new char[length+1];
-        //str=s;
+        //str=s; Không thể gắn vì s đang là kiểu const char* còn str là kiểu char*  .
         for(int i=0; i<length; i++ )
         {
             str[i]=s[i];
